@@ -4,8 +4,18 @@ $(function(){
         infinite: true,
         speed: 1000,
         fade: true,
-        cssEase: 'linear'
+        cssEase: 'linear',
+        prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/arrows-left.svg" alt="Arrow Left"></img>',
+        nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt="Arrow Right"></img>',
+        asNavFor: '.slider-dots'
     });
 
-  
+    $('.slider-dots').slick({
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        asNavFor: '.header__slider',
+        dots: true,
+        // centerMode: true,
+        focusOnSelect: true
+    });
 });

@@ -2,11 +2,15 @@ body {
     font-family: 'Fira Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    color: #ffffff;
+    background-color: #171919;
+    text-transform: uppercase;
 }
 
 a {
     display: inline-block;
     text-decoration: none;
+    color: #ffffff;
 }
 
 ul,
@@ -21,7 +25,6 @@ li {
     line-height: 32px;
     letter-spacing: 7.33333px;
     text-transform: uppercase;    
-    color: #FFFFFF;
     opacity: 0.5;
     padding-left: 103px;
     position: relative;
@@ -35,5 +38,19 @@ li {
         background-color: #979797;
         left: 0;
         top: 50%;
+    }
+}
+
+.title {
+    span {
+        font-weight: 800;
+        font-size: 200px;
+        line-height: 156px;
+        opacity: 0.07;
+        h3 {
+            font-weight: 800;
+            font-size: 80px;
+            line-height: 156px;
+        }
     }
 }

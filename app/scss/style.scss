@@ -25,8 +25,6 @@
     right: 80px;
     bottom: 116px;
     text-align: right;
-    color: #fff;
-    text-transform: uppercase;
 }
 
 .slider-item__info-subtitle {
@@ -65,7 +63,6 @@
     position: absolute;
     right: 50px;
     bottom: 30px;
-    color: #ffffff;
     max-width: 920px;
     width: 100%;
     .slick-current {
@@ -91,6 +88,7 @@
         font-weight: 300;
         font-size: 16px;
         line-height: 19px;
+        text-transform: capitalize;
     }
 }
 
@@ -98,13 +96,11 @@
     position: absolute;
     top: 0;
     left: -14px;
-    color: #fff;
     font-size: 200px;
     line-height: 156px;
     font-weight: 800;
     z-index: 4;
     opacity: 0.07;
-    text-transform: uppercase;
     width: 467px;
 }
 
@@ -116,12 +112,10 @@
     border-right: 1px solid rgba(#fff, 0.25%);
     height: 100vh;
     text-align: center;
-    color: #fff;
 }
 
 .menu {
     a {
-        color: #fff;
         span {
             display: block;
             font-weight: 500;
@@ -131,6 +125,7 @@
             letter-spacing: 3px;
             padding-top: 6px;
             margin-bottom: 15px;
+            text-transform: capitalize;
         }
     }
 }
@@ -158,6 +153,7 @@
     letter-spacing: 1.05px;
     position: relative;
     padding-left: 19px;
+    text-transform: capitalize;
     &::before {
         content: '';
         position: absolute;
@@ -181,6 +177,19 @@
     z-index: 3;
     left: 210px;
     bottom: 40px;
+}
+
+.line-animation {
+    stroke-dashoffset: 600;
+    stroke-dasharray: 600;
+    animation: animdash 5s 6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animdash {
+    to {
+        stroke-dashoffset: 0;
+    }
 }
 
 

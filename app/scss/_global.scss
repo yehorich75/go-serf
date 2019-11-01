@@ -1,3 +1,13 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: 'Fira Sans', sans-serif;
     font-size: 16px;
@@ -20,7 +30,12 @@ li {
     padding: 0;
 }
 
-.subtitle-left {
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.headline-left {
     font-size: 22px;
     line-height: 32px;
     letter-spacing: 7.33333px;
@@ -43,27 +58,41 @@ li {
 
 .title {
     span {
+        display: inline-block;
         font-weight: 800;
         font-size: 200px;
-        position: relative;
         color: rgba(#fff, .02);
+        position: relative;
+        transform: translateX(-54px);
     }
     h3 {
         position: absolute;
+        font-size: 80px;
         top: 0;
-        right: -10px;
+        right: -5px;
         margin: 0;
         color: #ffffff;
-        font-size: 80px;
-        &::before {
+        &::after {
             content: '';
-            display: block;
-            background-color: #4AF6CD;
-            width: 80px;
-            height: 1px;
             position: absolute;
             top: 0;
             right: 0;
+            width: 80px;
+            height: 1px;
+            background-color: $green;
+        }
+    }
+}
+
+.subtitle {
+    display: inline-block;
+    text-align: right;
+    &__head {
+        font-weight: 800;
+        font-size: 40px;
+        padding-right: 5px;
+        span {
+            font-weight: 100;
         }
     }
 }

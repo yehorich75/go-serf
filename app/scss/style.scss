@@ -206,11 +206,22 @@
     margin-top: -80px;
 }
 
+.serf-slider {
+    padding-top: 110px;
+    .slider-arrows {
+        top: 50px;
+        opacity: .25;
+    }
+}
+
 .serf-box {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 750px;
+    &__inner{
+        min-height: 750px;
+        background: rgba(#1C2121, .85);
+    }
 }
 
 

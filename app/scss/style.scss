@@ -307,4 +307,56 @@
   }
 }
 
+.slider-map{
+  max-width: 1200px;
+  min-height: 635px;
+  background: url(../img/world-map-dots.png) no-repeat center center/cover;
+  margin: 0 auto;
+  .slick-list{
+    min-height: 635px;
+  }
+}
+
+.slider-dots__circle{
+width: 24px;
+height: 24px;
+background-color: $green;
+border-radius: 50%;
+}
+
+.slider-dots__content{
+  display: none;
+}
+
+.slider-dots{
+  position: relative;
+}
+
+.slider-dots--1{
+  top: 348px;
+  left: 0;
+}
+.slider-dots--2{
+  top: 297px;
+}
+.slider-dots--3{
+  top: 318px;
+  left: 39px;
+}
+.slider-dots--4{
+
+}
+.slider-dots--5{
+
+}
+.slider-dots--6{
+
+}
+.slider-dots--7{
+
+}
+.slider-dots--8{
+
+}
+
 @import "media";

@@ -31,6 +31,7 @@ $(function(){
         slidesToShow: 8,
         slidesToScroll: 1,
         arrows: false,
-        asNavFor: '.serf-slider'
+        asNavFor: '.serf-slider',
+        focusOnSelect: true
     })
 });

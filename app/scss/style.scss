@@ -338,25 +338,43 @@ border-radius: 50%;
 }
 .slider-dots--2{
   top: 297px;
+  .slider-dots__circle{
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      background-image: url(../img/mini-marker.png);
+      width: 14px;
+      height: 17px;
+      background-size: cover;
+      right: -50px;
+      top: -50px;
+    }
+  }
 }
 .slider-dots--3{
   top: 318px;
   left: 39px;
 }
 .slider-dots--4{
-
+  top: 496px;
+  left: -37px;
 }
 .slider-dots--5{
-
+  top: 228px;
+  left: -68px;
 }
 .slider-dots--6{
-
+  top: 555px;
+  left: -115px;
 }
 .slider-dots--7{
-
+  top: 395px;
+  left: -98px;
 }
 .slider-dots--8{
-
+  top: 497px;
+  left: 33px;
 }
 
 @import "media";

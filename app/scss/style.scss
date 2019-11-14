@@ -315,6 +315,14 @@
   .slick-list{
     min-height: 635px;
   }
+  .slick-current{
+    .slider-dots__content{
+      display: block;
+      width: 283px;
+      height: 216px;
+      padding: 28px 32px;
+    }
+  }
 }
 
 .slider-dots__circle{
@@ -347,8 +355,9 @@ border-radius: 50%;
       width: 14px;
       height: 17px;
       background-size: cover;
-      right: -50px;
-      top: -50px;
+      right: -17px;
+      top: -23px;
+      // opacity: .5;
     }
   }
 }

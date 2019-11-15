@@ -325,6 +325,23 @@
   }
 }
 
+.slider-dots__content-row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-dots__content-title{
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.slider-dots__content-subtitle{
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: none;
+}
+
 .slider-dots__circle{
 width: 24px;
 height: 24px;

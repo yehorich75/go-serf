@@ -319,8 +319,10 @@
     .slider-dots__content{
       display: block;
       width: 283px;
-      height: 216px;
       padding: 28px 32px;
+      // position: absolute;
+      // bottom: 36px;
+      // transform: translateX(-60%);
     }
   }
 }
@@ -389,6 +391,22 @@ border-radius: 50%;
   display: none;
   background: rgba(#000000, .3);
   border-radius: 6px;
+  position: absolute;
+  bottom: 36px;
+  transform: translateX(-50%);
+  &::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid #4AF6CD;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    bottom: -20px;
+    left: 50%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
 }
 
 .slider-dots{

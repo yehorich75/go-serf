@@ -4,6 +4,7 @@ let gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
+    pug = require('gulp-pug'),
     del = require('del'),
     autoprefixer = require('gulp-autoprefixer');
 
@@ -37,6 +38,14 @@ gulp.task('css', function(){
 gulp.task('html', function(){
   return gulp.src('app/*.html')
   .pipe(browserSync.reload({stream: true}))
+});
+
+gulp.task('pug', function(){
+  return gulp.src('app/pug/*.pug')
+  pipe(pug({
+    pretty: true
+  }))
+  .pipe(gulp.dest('app'))
 });
 
 gulp.task('script', function(){
@@ -81,8 +90,9 @@ gulp.task('export', function(){
 
 gulp.task('watch', function(){
   gulp.watch('app/scss/**/*.scss', gulp.parallel('scss'));
-  gulp.watch('app/*.html', gulp.parallel('html'))
-  gulp.watch('app/js/*.js', gulp.parallel('script'))
+  gulp.watch('app/pug/*.pug', gulp.parallel('pug'));
+  gulp.watch('app/*.html', gulp.parallel('html'));
+  gulp.watch('app/js/*.js', gulp.parallel('script'));
 });
 
 gulp.task('build', gulp.series('clean', 'export'))

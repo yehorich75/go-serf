@@ -449,12 +449,12 @@ border-radius: 50%;
   left: -37px;
 }
 .slider-dots--5{
-  top: 228px;
+  top: 264px;
   left: -68px;
   .slider-dots__content{
-    transform: translateY(15%);
+    transform: translateX(-50%);
     &::before{
-      left: 90%;
+      left: 50%;
     }
   }
 }

@@ -4,6 +4,7 @@ let gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
     pug = require('gulp-pug'),
+    htmlbeautify = require('gulp-html-beautify'),
     rename = require('gulp-rename'),
     del = require('del'),
     autoprefixer = require('gulp-autoprefixer');
@@ -11,6 +12,24 @@ let gulp = require('gulp'),
 
 gulp.task('clean', async function(){
   del.sync('dist')
+})
+
+gulp.task('htmlbeautify', function() {
+  var options = {
+    indentSize: 2,
+    unformatted: [
+        // https://www.w3.org/TR/html5/dom.html#phrasing-content
+      'abbr', 'area', 'b', 'bdi', 'bdo', 'br', 'cite',
+      'code', 'data', 'datalist', 'del', 'dfn', 'em', 'embed', 'i', 'ins', 'kbd', 'keygen', 'map', 'mark', 'math', 'meter', 'noscript',
+      'object', 'output', 'progress', 'q', 'ruby', 's', 'samp', 'small',
+      'strong', 'sub', 'sup', 'template', 'time', 'u', 'var', 'wbr', 'text',
+      'acronym', 'address', 'big', 'dt', 'ins', 'strike', 'tt'
+    ]
+
+};
+  gulp.src('app/*.html')
+    .pipe(htmlbeautify(options))
+    .pipe(gulp.dest('app'))
 })
 
 gulp.task('scss', function(){
@@ -42,6 +61,8 @@ gulp.task('pug', function(){
     baseDir: 'app/pug'
   }))
   .pipe(gulp.dest('app/'))
+  .pipe(htmlbeautify())
+  .pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('html', function(){

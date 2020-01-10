@@ -3,8 +3,8 @@ let gulp = require('gulp'),
     browserSync = require('browser-sync'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
-    rename = require('gulp-rename'),
     pug = require('gulp-pug'),
+    rename = require('gulp-rename'),
     del = require('del'),
     autoprefixer = require('gulp-autoprefixer');
 
@@ -35,17 +35,18 @@ gulp.task('css', function(){
     .pipe(browserSync.reload({stream: true}))
 });
 
+gulp.task('pug', function(){
+  return gulp.src('app/pug/*.pug')
+  .pipe(pug({
+    pretty: true,
+    baseDir: 'app/pug'
+  }))
+  .pipe(gulp.dest('app/'))
+});
+
 gulp.task('html', function(){
   return gulp.src('app/*.html')
   .pipe(browserSync.reload({stream: true}))
-});
-
-gulp.task('pug', function(){
-  return gulp.src('app/pug/*.pug')
-  pipe(pug({
-    pretty: true
-  }))
-  .pipe(gulp.dest('app'))
 });
 
 gulp.task('script', function(){

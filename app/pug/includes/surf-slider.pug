@@ -1,0 +1,17 @@
+.surf-slider
+    mixin surf-slider(img, name, location)
+        .surf-box(style= img)
+            .surf-box__inner 
+                .surf-box__inner-title= name
+                .surf-box__inner-location= location
+                .surf-box__inner-btn
+                    a.btn(href="#") view
+                        span surf
+    +surf-slider('background-image: url(../img/slide-1.jpg);', 'Malibu Beach', 'California | USA')
+    +surf-slider('background-image: url(../img/slide-2.jpg);', 'Airlie Beach', 'Queensland | Australia')
+    +surf-slider('background-image: url(../img/slide-3.jpg);', 'Cloud Nine', 'Siargao | Philippines')
+    +surf-slider('background-image: url(../img/slide-4.jpg);', 'Vieux Boucau', 'Hossegor | France')
+    +surf-slider('background-image: url(../img/slide-1.jpg);', 'Malibu Beach', 'California | USA')
+    +surf-slider('background-image: url(../img/slide-2.jpg);', 'Malibu Beach', 'California | USA')
+    +surf-slider('background-image: url(../img/slide-3.jpg);', 'Malibu Beach', 'California | USA')
+    +surf-slider('background-image: url(../img/slide-4.jpg);', 'Malibu Beach', 'California | USA')

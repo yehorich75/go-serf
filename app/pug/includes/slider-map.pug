@@ -1,0 +1,40 @@
+.slider-map
+    .slider-dots.slider-dots--1
+        mixin slider-map(number1, name1, number2, name2, number3, name3)
+            .slider-dots__circle
+            .slider-dots__content
+                .slider-dots__content-row
+                    .slider-dots__content-head
+                        .slider-dots__content-title Airlie Beach
+                        .slider-dots__content-subtitle Australia
+                    a.slider-dots__content-link(href="#")
+                        img(src="img/arrows-right.svg" alt="Arrow Right")
+                .slider-dots__content-row
+                    .slider-dots__content-item
+                        img(src="img/surf-icon.svg" alt="Surf Icon")
+                        .slider-dots__content-number= number1
+                        .slider-dots__content-name= name1
+                    .slider-dots__content-item
+                        img(src="img/water-icon.svg" alt="Water Icon")
+                        .slider-dots__content-number= number2
+                        .slider-dots__content-name= name2
+                    .slider-dots__content-item
+                        img(src="img/wind-icon.svg" alt="Wind Icon")
+                        .slider-dots__content-number= number3
+                        .slider-dots__content-name= name3
+
+        +slider-map('9 - 13', 'Surf (FT)', '+2.3', 'Tide (FT)', '4 SE', 'Wind (KTS)')
+    .slider-dots.slider-dots--2
+        +slider-map('9 - 13', 'Surf (FT)', '+2.3', 'Tide (FT)', '4 SE', 'Wind (KTS)')
+    .slider-dots.slider-dots--3
+        +slider-map('9 - 13', 'Surf (FT)', '+2.3', 'Tide (FT)', '4 SE', 'Wind (KTS)')
+    .slider-dots.slider-dots--4
+        +slider-map('9 - 13', 'Surf (FT)', '+2.3', 'Tide (FT)', '4 SE', 'Wind (KTS)')
+    .slider-dots.slider-dots--5
+        +slider-map('9 - 13', 'Surf (FT)', '+2.3', 'Tide (FT)', '4 SE', 'Wind (KTS)')
+    .slider-dots.slider-dots--6
+        +slider-map('9 - 13', 'Surf (FT)', '+2.3', 'Tide (FT)', '4 SE', 'Wind (KTS)')
+    .slider-dots.slider-dots--7
+        +slider-map('9 - 13', 'Surf (FT)', '+2.3', 'Tide (FT)', '4 SE', 'Wind (KTS)')
+    .slider-dots.slider-dots--8
+        +slider-map('9 - 13', 'Surf (FT)', '+2.3', 'Tide (FT)', '4 SE', 'Wind (KTS)')

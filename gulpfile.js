@@ -7,6 +7,8 @@ let gulp = require('gulp'),
     htmlbeautify = require('gulp-html-beautify'),
     rename = require('gulp-rename'),
     del = require('del'),
+    plumber = require('gulp-plumber'),
+    notify = require('gulp-notify'),
     autoprefixer = require('gulp-autoprefixer');
 
 
@@ -56,13 +58,16 @@ gulp.task('css', function(){
 
 gulp.task('pug', function(){
   return gulp.src('app/pug/*.pug')
-  .pipe(pug({
-    pretty: true,
-    baseDir: 'app/pug'
-  }))
-  .pipe(gulp.dest('app/'))
-  .pipe(htmlbeautify())
-  .pipe(browserSync.reload({stream: true}))
+    .pipe(plumber({
+      errorHandler: notify.onError()
+    }))
+    .pipe(pug({
+      pretty: true,
+      baseDir: 'app/pug'
+    }))
+    .pipe(gulp.dest('app/'))
+    .pipe(htmlbeautify())
+    .pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('html', function(){

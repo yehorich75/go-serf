@@ -191,7 +191,6 @@
 }
 
 .surf {
-  padding: 160px 0 120px;
   background-image: url(../img/surf-bg.png);
   background-repeat: no-repeat;
   background-position: right 200px;
@@ -477,8 +476,44 @@ border-radius: 50%;
   }
 }
 
+.travel{
+  background-image: url(../img/cocktail.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.travel-slider{
+  &__head{
+    background-repeat: no-repeat;
+    background-position: top left;
+    min-height: 780px;
+  }
+}
+
 .travel-slider__info {
   display: flex;
+  &-subtitle{
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: 8px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    transform: rotate(-90deg);
+  }
+  &-title{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 36px;
+    span{
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 36px;
+      text-align: right;
+      letter-spacing: 5.25px;
+      opacity: 0.75;
+    }
+  }
 }
 
 

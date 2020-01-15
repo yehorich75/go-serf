@@ -47,11 +47,30 @@ li {
     &::before {
         content: "";
         position: absolute;
-        // display: block;
         height: 1px;
         width: 80px;
         background-color: #979797;
         left: 0;
+        top: 50%;
+    }
+}
+
+.headline-right{
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 7.33333px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    padding-right: 103px;
+    position: relative;
+    display: inline-block;
+    &::before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 80px;
+        background-color: #979797;
+        right: 0;
         top: 50%;
     }
 }
@@ -95,6 +114,17 @@ li {
             font-weight: 100;
         }
     }
+}
+
+.descr{
+    display: inline-block;
+    &__head {
+        font-weight: 800;
+        font-size: 40px;
+        span {
+            font-weight: 100;
+        }
+    }    
 }
 
 .btn{

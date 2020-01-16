@@ -62,14 +62,37 @@ html(lang="en")
                                     span Flight
 
             section.sleep
-                .title
-                    span sleep
-                        h3 sleep
-                .surf__subtitle
-                    .subtitle
-                    .headline-left Resorts
-                    .subtitle__head Auberge
-                        span Australia
+                .container
+                    .title
+                        span sleep
+                            h3 sleep
+                    .sleep__slider
+                        .sleep__slider-item.sleep-slider
+                            .sleep-slider__head(style='background-image: url(img/sleep-slider.png);')
+                                .sleep-slider__subtitle
+                                    .subtitle
+                                        .headline-left Resorts
+                                        .subtitle__head Auberge
+                                            span Australia
+                            .sleep-slider__descr(style='background-image: url(img/star.png);')
+                                .descr
+                                    .sleep-slider__info
+                                        .sleep-slider__info-item
+                                            .sleep-slider__info-subtitle Resort
+                                            .sleep-slider__info-title Auberge Australia
+                                        .sleep-slider__info-item
+                                            .sleep-slider__info-subtitle # of Nights
+                                            .sleep-slider__info-title 5 Nights
+                                        .sleep-slider__info-item
+                                            .sleep-slider__info-subtitle # of Guests
+                                            .sleep-slider__info-title 4 Guests
+                                        .sleep-slider__info-item
+                                            .sleep-slider__info-subtitle Pricing
+                                            .sleep-slider__info-title $349 USD
+                                                span Per Night
+                                    .sleep-slider__btn
+                                        a.btn(href="#" tabindex="0") Book
+                                            span Stay
 
             section.shop
                 .title

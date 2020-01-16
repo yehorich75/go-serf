@@ -478,11 +478,10 @@ border-radius: 50%;
 
 .travel{
   background-image: url(../img/cocktail.png);
-  background-position: bottom right;
-  background-repeat: no-repeat;
 }
 
-.travel-slider{
+.travel-slider,
+.sleep-slider{
   &__head{
     background-repeat: no-repeat;
     background-position: top left;
@@ -509,7 +508,8 @@ border-radius: 50%;
   }
 }
 
-.travel-slider__info {
+.travel-slider__info
+.sleep-slider__info{
   display: flex;
   justify-content: space-around;
   .travel-slider__info-item{
@@ -578,6 +578,15 @@ border-radius: 50%;
   }
 }
 
+.sleep{
+  background-image: url(../img/hammock.png);
+}
+
+.travel,
+.sleep{
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
 
 
 

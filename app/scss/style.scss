@@ -488,6 +488,16 @@ border-radius: 50%;
     background-position: top left;
     min-height: 780px;
   }
+  &__descr{
+    img{
+      padding-left: 24px;
+    }
+  }
+  &__subtitle{
+    text-align: right;
+    padding-right: 80px;
+    padding-top: 132px;
+  }
 }
 
 .travel-slider__info {

@@ -478,6 +478,9 @@ border-radius: 50%;
 
 .travel{
   background-image: url(../img/cocktail.png);
+  .slider-arrows{
+    top: 225px;
+  }
 }
 
 .travel-slider,
@@ -494,8 +497,14 @@ border-radius: 50%;
     min-height: 320px;
     background-repeat: no-repeat;
     background-position: right center;
-    img{
-      padding-left: 24px;
+    .descr__head{
+      position: absolute;
+      padding-right: 78px;
+      img{
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
     }
   }
   &__subtitle{

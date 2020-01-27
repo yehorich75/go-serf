@@ -480,6 +480,7 @@ border-radius: 50%;
   background-image: url(../img/cocktail.png);
   .slider-arrows{
     top: 225px;
+    opacity: .5;
   }
 }
 
@@ -598,6 +599,17 @@ border-radius: 50%;
 .sleep{
   background-position: bottom right;
   background-repeat: no-repeat;
+}
+
+.sleep-slider{
+  .descr__head{
+    position: relative;
+    img{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
 }
 
 .sleep-slider__info{

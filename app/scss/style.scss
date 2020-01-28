@@ -603,11 +603,10 @@ border-radius: 50%;
 
 .sleep-slider{
   .descr__head{
-    position: relative;
+    position: absolute;
     img{
-      position: absolute;
-      top: 0;
-      right: 0;
+      top: -6px;
+      left: 228px;
     }
   }
 }

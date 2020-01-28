@@ -26,5 +26,13 @@
   },
   "dependencies": {
     "slick-carousel": "^1.8.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yehorich75/go-serf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yehorich75/go-serf/issues"
+  },
+  "homepage": "https://github.com/yehorich75/go-serf#readme"
 }

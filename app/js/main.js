@@ -41,5 +41,13 @@ $(function(){
         cssEase: 'linear',
         prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/arrows-left.svg" alt="Arrow Left"></img>',
         nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt="Arrow Right"></img>'
+    });
+
+    $('.sleep__slider').slick({
+        infinite: true,
+        fade: true,
+        cssEase: 'linear',
+        prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/arrows-left.svg" alt="Arrow Left"></img>',
+        nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt="Arrow Right"></img>'
     })
 });
